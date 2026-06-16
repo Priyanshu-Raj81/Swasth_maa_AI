@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="hi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Swasth Maa AI Registration</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;family=Noto+Sans+Devanagari:wght@400;500;600;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#19e619",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#112111",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1a2e1a",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "Noto Sans Devanagari", "sans-serif"],
+                        "hindi": ["Noto Sans Devanagari", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar hide for cleaner mobile view */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display min-h-screen flex justify-center">
+<!-- Mobile Container -->
+<div class="w-full max-w-[480px] flex flex-col min-h-screen bg-background-light dark:bg-background-dark relative shadow-2xl">
+<!-- Header -->
+<header class="flex items-center p-4 pb-2 sticky top-0 z-10 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm">
+<button class="text-slate-900 dark:text-white flex size-12 shrink-0 items-center justify-center rounded-full hover:bg-slate-100 dark:hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h1 class="text-slate-900 dark:text-white text-lg font-bold leading-tight flex-1 text-center pr-12 font-hindi">पंजीकरण (Registration)</h1>
+</header>
+<!-- Main Content -->
+<main class="flex-1 px-4 py-2 flex flex-col gap-6 overflow-y-auto no-scrollbar pb-32">
+<!-- Hero Image/Illustration -->
+<div class="w-full aspect-[16/9] rounded-xl overflow-hidden shadow-sm bg-surface-light dark:bg-surface-dark relative">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="Indian mother holding a baby smiling in a rural setting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAForkMfNkfey9muj59mvCxg8T8k6ZwFRKsUNErq4eDLYgYNx4FoGB7NDyQufRWgfcZZ0OgWyxAURlslbtF6zHR-rDbADlMQR6MZPz9fJNdl1oNtJrdCZYDgnjG183eEeG1n6EGUtetsoiKg1DW68CnmPHAKj_n8MkAym39cjQfXkvJAEnKboeTg4RvIh32FvdxdSMhOyPtEBJ56NkBQzkfdnhV7Ler80YOvYv094iPvxUbTbWkURl89I64Rou_naVoJo_pUBDka_c');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-light dark:from-background-dark to-transparent opacity-60"></div>
+</div>
+<!-- Welcome Text -->
+<div class="text-center px-2">
+<h2 class="text-slate-900 dark:text-white text-[28px] font-bold leading-tight mb-2 font-hindi">नमस्ते! अपना खाता बनाएं</h2>
+<p class="text-slate-500 dark:text-slate-400 text-base font-hindi">Swasth Maa AI परिवार में आपका स्वागत है</p>
+</div>
+<!-- Form Fields -->
+<div class="flex flex-col gap-6 mt-2">
+<!-- Name Input -->
+<div class="flex flex-col gap-2">
+<label class="flex items-center justify-between text-slate-900 dark:text-white text-lg font-bold font-hindi">
+<span>पूरा नाम (Full Name)</span>
+<button aria-label="Listen to label" class="text-primary hover:bg-primary/10 p-1.5 rounded-full transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">volume_up</span>
+</button>
+</label>
+<div class="relative group">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400 dark:text-slate-500">
+<span class="material-symbols-outlined">person</span>
+</div>
+<input class="w-full h-16 pl-12 pr-12 rounded-xl border-2 border-slate-200 dark:border-slate-700 bg-surface-light dark:bg-surface-dark text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:border-primary focus:ring-0 text-xl font-medium transition-all shadow-sm" placeholder="जैसे: सीता देवी" type="text"/>
+<button class="absolute inset-y-0 right-0 pr-4 flex items-center text-primary hover:text-green-600 dark:hover:text-green-400">
+<span class="material-symbols-outlined text-2xl">mic</span>
+</button>
+</div>
+</div>
+<!-- Mobile Input -->
+<div class="flex flex-col gap-2">
+<label class="flex items-center justify-between text-slate-900 dark:text-white text-lg font-bold font-hindi">
+<span>मोबाइल नंबर (Mobile)</span>
+<button aria-label="Listen to label" class="text-primary hover:bg-primary/10 p-1.5 rounded-full transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">volume_up</span>
+</button>
+</label>
+<div class="relative group">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400 dark:text-slate-500">
+<span class="material-symbols-outlined">smartphone</span>
+</div>
+<input class="w-full h-16 pl-12 pr-12 rounded-xl border-2 border-slate-200 dark:border-slate-700 bg-surface-light dark:bg-surface-dark text-slate-900 dark:text-white placeholder:text-slate-400 dark:placeholder:text-slate-500 focus:border-primary focus:ring-0 text-xl font-medium transition-all shadow-sm font-display tracking-wider" placeholder="00000 00000" type="tel"/>
+</div>
+<p class="text-xs text-slate-500 dark:text-slate-400 px-1 font-hindi">हम सत्यापन के लिए एक ओटीपी (OTP) भेजेंगे</p>
+</div>
+<!-- Village/Location Input -->
+<div class="flex flex-col gap-2">
+<label class="flex items-center justify-between text-slate-900 dark:text-white text-lg font-bold font-hindi">
+<span>गाँव का नाम (Village)</span>
+<button aria-label="Listen to label" class="text-primary hover:bg-primary/10 p-1.5 rounded-full transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined text-xl">volume_up</span>
+</button>
+</label>
+<div class="relative group">
+<div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400 dark:text-slate-500">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<select class="w-full h-16 pl-12 pr-10 rounded-xl border-2 border-slate-200 dark:border-slate-700 bg-surface-light dark:bg-surface-dark text-slate-900 dark:text-white focus:border-primary focus:ring-0 text-lg font-medium transition-all shadow-sm appearance-none">
+<option disabled="" selected="" value="">अपना गाँव चुनें...</option>
+<option value="1">रामपुर (Rampur)</option>
+<option value="2">किशनपुर (Kishanpur)</option>
+<option value="3">गोपालगंज (Gopalganj)</option>
+<option value="4">सुंदरनगर (Sundarnagar)</option>
+</select>
+<div class="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none text-slate-400 dark:text-slate-500">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Bottom Action Bar -->
+<div class="fixed bottom-0 w-full max-w-[480px] p-4 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 flex flex-col gap-3">
+<button class="w-full h-16 bg-primary hover:bg-green-500 active:bg-green-600 text-black font-bold text-xl rounded-xl shadow-lg shadow-primary/30 flex items-center justify-center gap-2 transition-all transform active:scale-[0.98]">
+<span class="font-hindi">आगे बढ़ें (Next)</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<div class="flex justify-center items-center gap-2 py-1">
+<span class="text-slate-500 dark:text-slate-400 font-medium text-sm font-hindi">मदद चाहिए?</span>
+<button class="text-primary font-bold text-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-base">call</span>
+<span class="font-hindi">कॉल करें</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>

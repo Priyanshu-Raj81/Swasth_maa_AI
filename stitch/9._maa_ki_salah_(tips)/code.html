@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Maa ki Salah - Swasth Maa AI</title>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#19e619",
+                        "primary-dark": "#14b814", 
+                        "primary-light": "#e7fce7",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#112111",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1c2e1c",
+                        "text-main": "#0e1b0e",
+                        "text-muted": "#4e974e",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "2xl": "2rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-text-main dark:text-gray-100 font-display min-h-screen flex flex-col overflow-hidden selection:bg-primary selection:text-white">
+<!-- Mobile Container -->
+<div class="mx-auto w-full max-w-md h-screen flex flex-col bg-background-light dark:bg-background-dark relative shadow-2xl overflow-hidden">
+<!-- Header -->
+<header class="flex-none px-4 pt-12 pb-4 bg-surface-light dark:bg-surface-dark shadow-sm z-10">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[28px]">volunteer_activism</span>
+</div>
+<div>
+<h1 class="text-xl font-bold leading-tight">Maa ki Salah</h1>
+<p class="text-xs text-text-muted dark:text-gray-400 font-medium">Expert Advice</p>
+</div>
+</div>
+<button class="w-10 h-10 rounded-full bg-background-light dark:bg-gray-800 flex items-center justify-center text-text-main dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</div>
+</header>
+<!-- Main Content Scroll Area -->
+<main class="flex-1 overflow-y-auto no-scrollbar pb-24">
+<!-- Hero Video Section -->
+<section class="relative w-full aspect-[4/3] bg-gray-200 group cursor-pointer overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Doctor explaining health tips to a patient in a rural clinic setting" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBht5yRTSOXAB1VyK_xFSCxIOPYS1m5gB1o_wd3USbcOijIOY3a6u968vsziIy5dyXu39sVszNTBb1CvOe-54_WYLotZWgtrmNiaUi-MivTfWkcoA8wcf5kyWYSa8rWpMsP1IFyWRT3Kh5twRdq4qO-GUO_P9wSVTl5aC7sGunQBbmjqhBvk0pCjMcf7mtts7O7qUPuRqobNHLad7_4lltTpoNbcRTug_krwUw_HjZL24k6dQ65-PL6IG4SjA8d-ZyMvLbSqLHi1Zs');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<div class="absolute bottom-0 left-0 w-full p-5">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary text-white text-xs font-bold mb-2">
+<span class="material-symbols-outlined text-[14px]">star</span>
+                        Aaj ki Salah
+                    </span>
+<h2 class="text-white text-2xl font-bold leading-tight mb-1">Garbhavastha Ke Dauraan Dekhbhaal</h2>
+<p class="text-gray-200 text-sm opacity-90 mb-3">Care during pregnancy: Essential tips from Dr. Riya.</p>
+</div>
+<!-- Play Button Overlay -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+<div class="w-16 h-16 bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+<div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center shadow-lg text-white pl-1">
+<span class="material-symbols-outlined text-[32px]">play_arrow</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Category Filters -->
+<section class="mt-6 pl-4">
+<div class="flex gap-3 overflow-x-auto no-scrollbar pb-2 pr-4">
+<!-- Active Tab -->
+<button class="flex shrink-0 items-center gap-2 px-4 py-2.5 rounded-full bg-primary text-white shadow-md shadow-primary/30 transition-all">
+<span class="material-symbols-outlined text-[20px]">grid_view</span>
+<span class="text-sm font-semibold">All</span>
+</button>
+<!-- Inactive Tabs -->
+<button class="flex shrink-0 items-center gap-2 px-4 py-2.5 rounded-full bg-surface-light dark:bg-surface-dark border border-gray-100 dark:border-gray-700 text-text-main dark:text-gray-300 shadow-sm whitespace-nowrap hover:bg-gray-50 dark:hover:bg-gray-800 transition-all">
+<span class="material-symbols-outlined text-[20px] text-green-600">nutrition</span>
+<span class="text-sm font-medium">Nutrition (Khan-pan)</span>
+</button>
+<button class="flex shrink-0 items-center gap-2 px-4 py-2.5 rounded-full bg-surface-light dark:bg-surface-dark border border-gray-100 dark:border-gray-700 text-text-main dark:text-gray-300 shadow-sm whitespace-nowrap hover:bg-gray-50 dark:hover:bg-gray-800 transition-all">
+<span class="material-symbols-outlined text-[20px] text-blue-500">self_improvement</span>
+<span class="text-sm font-medium">Exercise (Vyayam)</span>
+</button>
+<button class="flex shrink-0 items-center gap-2 px-4 py-2.5 rounded-full bg-surface-light dark:bg-surface-dark border border-gray-100 dark:border-gray-700 text-text-main dark:text-gray-300 shadow-sm whitespace-nowrap hover:bg-gray-50 dark:hover:bg-gray-800 transition-all">
+<span class="material-symbols-outlined text-[20px] text-purple-500">psychology</span>
+<span class="text-sm font-medium">Mental Health</span>
+</button>
+</div>
+</section>
+<!-- Video List -->
+<section class="px-4 mt-6 flex flex-col gap-5">
+<div class="flex items-center justify-between mb-1">
+<h3 class="text-lg font-bold text-text-main dark:text-white">Swasth Rehne Ke Tareeke</h3>
+<button class="text-primary text-sm font-medium hover:underline">View All</button>
+</div>
+<!-- Video Card 1 -->
+<article class="bg-surface-light dark:bg-surface-dark rounded-xl p-3 shadow-sm border border-gray-100 dark:border-gray-800 flex flex-col gap-3">
+<div class="relative w-full h-40 rounded-lg overflow-hidden bg-gray-100">
+<img alt="Healthy bowl of spinach salad and nutritious vegetables" class="w-full h-full object-cover" data-alt="Top view of a healthy salad bowl with green vegetables" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVSlk_beWBDposiNzwnU5yVCMgG27ttTIFERY61NO3DEHG2wrzoE57zKFvCPO9sK3xdlu0WZh8uvX5jnY6SO-wU--2iE-AbOtjAxcR_i7aWqyFwJiad1gCk3NWf7y4w8cp7clRC5HvIrqKJK1IStKk66rNWDLg7Msj0zamlTI8JFwTCdB6tUR38JQnn3miW7hDZKt21n54XL0fZxrspMOvdAqeBiw6eUNwECj-MG_5106B5_Xm-FZbI5FZmpEaHT9rs5Eapjowmhk"/>
+<div class="absolute bottom-2 right-2 bg-black/60 text-white text-[10px] px-1.5 py-0.5 rounded font-medium">
+                            05:30
+                        </div>
+</div>
+<div>
+<div class="flex justify-between items-start">
+<h4 class="text-base font-bold text-text-main dark:text-white leading-tight mb-1">Iron-rich foods for energy</h4>
+<button class="text-gray-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">volume_up</span>
+</button>
+</div>
+<p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Learn which local vegetables boost energy.</p>
+<button class="w-full bg-primary hover:bg-primary-dark active:scale-[0.98] text-white py-3.5 rounded-lg font-bold text-lg flex items-center justify-center gap-2 transition-all shadow-md shadow-primary/20">
+<span class="material-symbols-outlined">play_circle</span>
+                            Dekhein (Watch)
+                        </button>
+</div>
+</article>
+<!-- Video Card 2 -->
+<article class="bg-surface-light dark:bg-surface-dark rounded-xl p-3 shadow-sm border border-gray-100 dark:border-gray-800 flex flex-col gap-3">
+<div class="relative w-full h-40 rounded-lg overflow-hidden bg-gray-100">
+<img alt="Woman doing gentle yoga stretches outdoors" class="w-full h-full object-cover" data-alt="A woman performing gentle yoga stretches in a peaceful outdoor environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjJOzADaTrTAmqUv3VXd3CfoQGXQb0-nFTitbW3vd-L5g7W-DFh3XvEUE9v9RH76Nz-ldrFWpjSE3ozvqN9V3Hx7hABl1NedDhKGpy6NXkZ1eylP6UoSak-9DEh9vxJW_U9MVJ33TbHRKqS1kKlz9a-65e89gp1v-s6yL-mdsRQU0o8-Buax0O_8uOTW_ebLEr-v9Q_ntPOvDlSRoVC5JP6kvKH5go7FnBM66dug2y0VaNSzrqcX90kMAfXGUaxqVQOK2A4YeldaQ"/>
+<div class="absolute bottom-2 right-2 bg-black/60 text-white text-[10px] px-1.5 py-0.5 rounded font-medium">
+                            03:15
+                        </div>
+</div>
+<div>
+<div class="flex justify-between items-start">
+<h4 class="text-base font-bold text-text-main dark:text-white leading-tight mb-1">Back pain relief exercises</h4>
+<button class="text-gray-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">volume_up</span>
+</button>
+</div>
+<p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Simple stretches to relieve back pain at home.</p>
+<button class="w-full bg-primary hover:bg-primary-dark active:scale-[0.98] text-white py-3.5 rounded-lg font-bold text-lg flex items-center justify-center gap-2 transition-all shadow-md shadow-primary/20">
+<span class="material-symbols-outlined">play_circle</span>
+                            Dekhein (Watch)
+                        </button>
+</div>
+</article>
+<!-- Video Card 3 -->
+<article class="bg-surface-light dark:bg-surface-dark rounded-xl p-3 shadow-sm border border-gray-100 dark:border-gray-800 flex flex-col gap-3">
+<div class="relative w-full h-40 rounded-lg overflow-hidden bg-gray-100">
+<img alt="Group of women talking and laughing in a support group" class="w-full h-full object-cover" data-alt="A group of diverse women sitting together and talking" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOFbFw6nbPBuwdqsCdGLQq4wxrtWX3MU8CqZairUXLdfug_cQ4KRnDYnMZmDaYc9apqGBSlkNgBFVagSZjmSz8mSxAc1QIvhOnKWxWV7UxCTnWmiYJ0q9Cug_GuthxsSLqnyu7-Ct1l_mh63UsVL4LhshFrdb0wKqmXs7T8iSyGhu4-mHnHmR2g_DWPysmYDiiknKUHl7i-1Xt2GPPg0w7AAo1KAYf_o7VGMf47ZL8SCWDuMm5JGIYxLPn4woWK0spXGnnDoVczPI"/>
+<div class="absolute bottom-2 right-2 bg-black/60 text-white text-[10px] px-1.5 py-0.5 rounded font-medium">
+                            08:45
+                        </div>
+</div>
+<div>
+<div class="flex justify-between items-start">
+<h4 class="text-base font-bold text-text-main dark:text-white leading-tight mb-1">Community Support Stories</h4>
+<button class="text-gray-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">volume_up</span>
+</button>
+</div>
+<p class="text-sm text-gray-500 dark:text-gray-400 mb-3">Real stories from mothers like you.</p>
+<button class="w-full bg-primary hover:bg-primary-dark active:scale-[0.98] text-white py-3.5 rounded-lg font-bold text-lg flex items-center justify-center gap-2 transition-all shadow-md shadow-primary/20">
+<span class="material-symbols-outlined">play_circle</span>
+                            Dekhein (Watch)
+                        </button>
+</div>
+</article>
+</section>
+<div class="h-8"></div>
+</main>
+<!-- Bottom Nav Bar (Based on provided component structure) -->
+<nav class="flex-none bg-surface-light dark:bg-surface-dark border-t border-gray-200 dark:border-gray-800 px-4 pb-6 pt-2 z-20">
+<div class="flex justify-between items-end">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400 hover:text-primary transition-colors group" href="#">
+<div class="group-hover:text-primary flex h-8 items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">home</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-wide">Home</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-primary" href="#">
+<div class="flex h-8 items-center justify-center relative">
+<div class="absolute -top-1 -right-1 w-2 h-2 bg-red-500 rounded-full"></div>
+<span class="material-symbols-outlined text-[24px] font-variation-settings-'FILL'1">smart_display</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-wide">Maa ki Salah</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400 hover:text-primary transition-colors group" href="#">
+<div class="group-hover:text-primary flex h-8 items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">chat_bubble</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-wide">Chat</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400 hover:text-primary transition-colors group" href="#">
+<div class="group-hover:text-primary flex h-8 items-center justify-center">
+<span class="material-symbols-outlined text-[24px]">person</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-wide">Profile</p>
+</a>
+</div>
+</nav>
+</div>
+</body></html>

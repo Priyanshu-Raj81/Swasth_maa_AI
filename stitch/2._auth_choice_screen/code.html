@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Swasth Maa AI - Auth Choice</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#19e619",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#112111",
+                        "text-main": "#0e1b0e",
+                        "text-secondary": "#4e974e",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-main dark:text-white antialiased">
+<div class="relative flex min-h-screen w-full flex-col max-w-md mx-auto overflow-hidden shadow-2xl bg-white dark:bg-background-dark">
+<!-- Top Bar -->
+<div class="flex items-center justify-between p-4 pt-6 pb-2 z-10">
+<div class="flex items-center gap-2">
+<div class="h-8 w-8 rounded-full bg-primary/20 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-xl">spa</span>
+</div>
+<h2 class="text-text-main dark:text-white text-lg font-bold tracking-tight">Swasth Maa AI</h2>
+</div>
+<button class="flex items-center gap-1.5 bg-primary/10 hover:bg-primary/20 transition-colors px-3 py-1.5 rounded-full">
+<span class="material-symbols-outlined text-primary text-sm">translate</span>
+<p class="text-primary text-sm font-bold leading-normal">English / हिन्दी</p>
+</button>
+</div>
+<!-- Scrollable Content Area -->
+<div class="flex-1 flex flex-col items-center overflow-y-auto pb-6">
+<!-- Hero Section -->
+<div class="w-full px-6 pt-4 pb-2 flex flex-col items-center">
+<div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden mb-6 bg-primary/5 flex items-end justify-center">
+<!-- Abstract decorative circles -->
+<div class="absolute top-[-20%] right-[-20%] w-[80%] h-[80%] rounded-full bg-primary/10 blur-3xl"></div>
+<div class="absolute bottom-[-10%] left-[-10%] w-[60%] h-[60%] rounded-full bg-primary/20 blur-2xl"></div>
+<div class="w-full h-full bg-center bg-no-repeat bg-contain z-10" data-alt="Illustration of mother holding baby happy" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA-x6LiQBweocaS2BsKT0o_Nl-yWslbsf_wOBVaP4B-ZQyQmg1yNSWEVmXi3JAm3NA61Uex2ilmKFm7AzOIJz_83_SBZs5SWP1O_3CZipDAxZcslLNuLlKpxf16JNr_1z5VgKQ-h_6y2rS5mkIEEZAFGmJpRV8cySdbQoQ6ZvmUT13m6n_LVYSBAcw_90SV_uoiyIdN1N2sw4McoUgUbDu9hGR6uwA6XaR04Nblz8blwVK7ez5GmAs56cD2QqGdcsfkBKysZsdJP5E");'></div>
+</div>
+<div class="text-center space-y-2 mb-8">
+<h1 class="text-text-main dark:text-white text-3xl font-bold leading-tight">Swasth Maa mein swagat hai</h1>
+<p class="text-text-secondary dark:text-gray-400 text-lg">Aapki aur aapke shishu ki sehat ka sathi</p>
+</div>
+</div>
+<!-- Action Buttons Container -->
+<div class="w-full px-4 flex flex-col gap-4">
+<!-- New Registration Card (Primary) -->
+<button class="group relative w-full text-left overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform active:scale-[0.98]">
+<div class="absolute inset-0 bg-primary opacity-100 dark:opacity-90 transition-opacity"></div>
+<!-- Decorative pattern overlay -->
+<div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
+<div class="relative p-6 flex items-center justify-between gap-4">
+<div class="flex flex-col gap-1 flex-1">
+<span class="flex items-center gap-2 mb-1">
+<span class="bg-black/10 rounded-full p-1"><span class="material-symbols-outlined text-white text-sm block">volume_up</span></span>
+<span class="text-black/60 text-xs font-semibold uppercase tracking-wider">New User?</span>
+</span>
+<h3 class="text-black text-2xl font-bold leading-tight">Naya Registration</h3>
+<p class="text-black/80 text-base font-medium mt-1">Pehli baar aaye hain? Yahan dabayein.</p>
+</div>
+<div class="h-14 w-14 bg-white/30 backdrop-blur-sm rounded-full flex items-center justify-center shrink-0 border-2 border-white/40 group-hover:bg-white/40 transition-colors">
+<span class="material-symbols-outlined text-black text-3xl">person_add</span>
+</div>
+</div>
+</button>
+<!-- Login Card (Secondary) -->
+<button class="group relative w-full text-left overflow-hidden rounded-xl bg-white dark:bg-gray-800 shadow-[0_2px_8px_rgba(0,0,0,0.08)] border-2 border-transparent hover:border-primary/50 transition-all duration-300 transform active:scale-[0.98]">
+<div class="relative p-6 flex items-center justify-between gap-4">
+<div class="flex flex-col gap-1 flex-1">
+<span class="flex items-center gap-2 mb-1">
+<span class="bg-gray-100 dark:bg-gray-700 rounded-full p-1"><span class="material-symbols-outlined text-text-secondary text-sm block">volume_up</span></span>
+<span class="text-text-secondary text-xs font-semibold uppercase tracking-wider">Returning?</span>
+</span>
+<h3 class="text-text-main dark:text-white text-xl font-bold leading-tight">Pehle se User hoon</h3>
+<p class="text-text-secondary dark:text-gray-400 text-sm font-medium mt-1">Login karne ke liye yahan dabayein.</p>
+</div>
+<div class="h-14 w-14 bg-primary/10 rounded-full flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary text-3xl">login</span>
+</div>
+</div>
+</button>
+</div>
+</div>
+<!-- Footer Help -->
+<div class="p-6 bg-background-light dark:bg-background-dark/50 flex justify-center">
+<button class="flex items-center gap-2 text-text-secondary hover:text-primary transition-colors py-2 px-4 rounded-lg hover:bg-primary/5">
+<span class="material-symbols-outlined">support_agent</span>
+<span class="font-semibold text-base">Madad chahiye? (Need Help?)</span>
+</button>
+</div>
+</div>
+</body></html>

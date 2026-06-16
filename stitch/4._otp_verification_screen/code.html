@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="hi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Swasth Maa AI - OTP Verification</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#19e619",
+                        "primary-dark": "#14b814",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#112111",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1c331c",
+                        "text-main": "#0e1b0e",
+                        "text-light": "#f8fcf8",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "2xl": "2rem", "full": "9999px"},
+                    boxShadow: {
+                        'soft': '0 4px 20px -2px rgba(25, 230, 25, 0.15)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display min-h-screen flex flex-col items-center justify-center text-slate-900 dark:text-slate-100 antialiased selection:bg-primary/30">
+<!-- Mobile Container -->
+<div class="w-full max-w-md h-screen max-h-[900px] flex flex-col bg-background-light dark:bg-background-dark relative overflow-hidden shadow-2xl sm:rounded-[2rem] sm:h-[850px] sm:my-8 sm:border-4 sm:border-white/50 dark:sm:border-white/10">
+<!-- Header -->
+<header class="flex items-center justify-between p-6 z-10">
+<button aria-label="Go back" class="flex items-center justify-center w-12 h-12 rounded-full bg-surface-light dark:bg-surface-dark shadow-sm hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-800 dark:text-slate-200 group">
+<span class="material-symbols-outlined text-2xl group-hover:-translate-x-0.5 transition-transform">arrow_back</span>
+</button>
+<div class="w-12"></div> <!-- Spacer for centering if needed -->
+</header>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col px-6 pt-2 pb-8">
+<!-- Illustration / Icon -->
+<div class="flex justify-center mb-8">
+<div class="w-24 h-24 rounded-full bg-primary/10 flex items-center justify-center relative">
+<div class="absolute inset-0 rounded-full bg-primary/20 animate-pulse"></div>
+<span class="material-symbols-outlined text-primary text-5xl relative z-10">sms</span>
+<!-- Decorative floating elements -->
+<div class="absolute -right-2 top-0 w-3 h-3 bg-primary rounded-full animate-bounce delay-100"></div>
+<div class="absolute -left-1 bottom-2 w-2 h-2 bg-primary/60 rounded-full animate-bounce delay-300"></div>
+</div>
+</div>
+<!-- Text Content -->
+<div class="text-center mb-10 space-y-3">
+<h1 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white">
+                    OTP Darj Karein
+                </h1>
+<p class="text-slate-500 dark:text-slate-400 text-lg leading-relaxed max-w-[280px] mx-auto">
+                    Humne <span class="font-semibold text-slate-900 dark:text-white">+91 98765 XXXXX</span> par code bheja hai.
+                </p>
+</div>
+<!-- OTP Inputs -->
+<div class="mb-10 w-full">
+<form action="#" class="flex justify-center gap-4 sm:gap-6" method="POST">
+<!-- Input 1 -->
+<div class="relative group">
+<input autofocus="" class="w-[72px] h-[80px] sm:w-[80px] sm:h-[88px] text-center text-4xl font-bold rounded-2xl border-2 border-slate-200 dark:border-slate-700 bg-surface-light dark:bg-surface-dark focus:border-primary focus:ring-4 focus:ring-primary/20 focus:outline-none transition-all duration-200 caret-primary shadow-sm text-slate-900 dark:text-white" inputmode="numeric" maxlength="1" placeholder="-" type="text"/>
+</div>
+<!-- Input 2 -->
+<div class="relative group">
+<input class="w-[72px] h-[80px] sm:w-[80px] sm:h-[88px] text-center text-4xl font-bold rounded-2xl border-2 border-slate-200 dark:border-slate-700 bg-surface-light dark:bg-surface-dark focus:border-primary focus:ring-4 focus:ring-primary/20 focus:outline-none transition-all duration-200 caret-primary shadow-sm text-slate-900 dark:text-white" inputmode="numeric" maxlength="1" placeholder="-" type="text"/>
+</div>
+<!-- Input 3 -->
+<div class="relative group">
+<input class="w-[72px] h-[80px] sm:w-[80px] sm:h-[88px] text-center text-4xl font-bold rounded-2xl border-2 border-slate-200 dark:border-slate-700 bg-surface-light dark:bg-surface-dark focus:border-primary focus:ring-4 focus:ring-primary/20 focus:outline-none transition-all duration-200 caret-primary shadow-sm text-slate-900 dark:text-white" inputmode="numeric" maxlength="1" placeholder="-" type="text"/>
+</div>
+<!-- Input 4 -->
+<div class="relative group">
+<input class="w-[72px] h-[80px] sm:w-[80px] sm:h-[88px] text-center text-4xl font-bold rounded-2xl border-2 border-slate-200 dark:border-slate-700 bg-surface-light dark:bg-surface-dark focus:border-primary focus:ring-4 focus:ring-primary/20 focus:outline-none transition-all duration-200 caret-primary shadow-sm text-slate-900 dark:text-white" inputmode="numeric" maxlength="1" placeholder="-" type="text"/>
+</div>
+</form>
+</div>
+<!-- Resend Timer -->
+<div class="text-center mb-auto">
+<p class="text-slate-500 dark:text-slate-400 font-medium">
+                    Code nahi mila? 
+                    <button class="text-slate-400 dark:text-slate-500 cursor-not-allowed font-semibold ml-1 inline-flex items-center gap-1">
+                        Phir se bhejein <span class="bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded text-sm text-slate-600 dark:text-slate-300">00:28</span>
+</button>
+<!-- Active State Example (Hidden for now): -->
+<!-- <button class="text-primary font-bold ml-1 hover:underline">Phir se bhejein</button> -->
+</p>
+</div>
+<!-- Action Button -->
+<div class="mt-8">
+<button class="w-full h-16 bg-primary hover:bg-primary-dark active:scale-[0.98] transition-all duration-200 rounded-xl shadow-soft flex items-center justify-center gap-3 group">
+<span class="text-slate-900 font-bold text-xl tracking-wide">Verify Karein</span>
+<span class="material-symbols-outlined text-slate-900 group-hover:translate-x-1 transition-transform font-bold">arrow_forward</span>
+</button>
+</div>
+<!-- Keyboard Spacer (Simulates space taken by keyboard on mobile) -->
+<div class="h-6 w-full"></div>
+</main>
+<!-- Decorative Background Blur -->
+<div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+<div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-64 h-64 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+</div>
+<!-- Script for simple auto-focus behavior (visual only, no logic) -->
+<script>
+        // Simple script to move focus to next input
+        const inputs = document.querySelectorAll('input[type="text"]');
+        inputs.forEach((input, index) => {
+            input.addEventListener('input', (e) => {
+                if(e.target.value.length === 1 && index < inputs.length - 1) {
+                    inputs[index + 1].focus();
+                }
+            });
+            input.addEventListener('keydown', (e) => {
+                if(e.key === 'Backspace' && e.target.value === '' && index > 0) {
+                    inputs[index - 1].focus();
+                }
+            });
+        });
+    </script>
+</body></html>

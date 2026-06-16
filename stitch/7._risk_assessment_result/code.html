@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Risk Assessment Result - Swasth Maa AI</title>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: Lexend -->
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#19e619", // Vivid Green
+                        "primary-dark": "#0e8a0e", // Darker shade for text
+                        "primary-light": "#e0fce0", // Very light shade for backgrounds
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#112111",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1a2e1a",
+                        "text-main-light": "#0e1b0e",
+                        "text-main-dark": "#e7f3e7",
+                        "text-muted-light": "#4e974e",
+                        "text-muted-dark": "#8bc48b",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "2xl": "2rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased min-h-screen flex flex-col items-center justify-center">
+<!-- Mobile Container -->
+<div class="relative w-full max-w-md h-full min-h-screen flex flex-col bg-background-light dark:bg-background-dark overflow-hidden shadow-2xl mx-auto">
+<!-- Header -->
+<header class="flex items-center justify-between p-4 pt-6">
+<button class="flex items-center justify-center w-10 h-10 rounded-full bg-surface-light dark:bg-surface-dark shadow-sm text-text-main-light dark:text-text-main-dark">
+<span class="material-symbols-outlined text-2xl">arrow_back</span>
+</button>
+<h1 class="text-lg font-bold text-text-main-light dark:text-text-main-dark">Risk Assessment</h1>
+<div class="w-10"></div> <!-- Spacer for alignment -->
+</header>
+<!-- Main Content Area -->
+<main class="flex-1 flex flex-col px-6 pb-24 overflow-y-auto">
+<!-- Hero Image / Illustration Area -->
+<div class="w-full aspect-[4/3] rounded-2xl mb-6 overflow-hidden relative shadow-sm group">
+<img alt="Happy mother holding her baby outdoors in sunlight" class="w-full h-full object-cover" data-alt="Happy mother holding her baby outdoors in sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKt6BZzfB7-G8P9QpJZlTxBKgSb3e_wZ0tV7EHr2oYA6coRP6mbYe0PAwC2nbBiTEODlAK--ZnlFp7sf8X8reRiheqvV9stqAZmFK0Hk4ehpxuh-oqW0zB-VHk3w1oH5i_SxFAz1ZB9oTHxrDXvkst-0Z0c_KZdestxnNgm8pcEFLyNdex_3cNU1tRu_gZnM9Yk-zmPGXC3atlSItXq88Qsu-n_oMRM2B98zd9XZ_vZhC-ovv1Pvc1wbz2v7KNdciVhOZqd2sX2eg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
+</div>
+<!-- Result Card -->
+<div class="bg-surface-light dark:bg-surface-dark rounded-2xl p-6 shadow-md border border-primary/20 flex flex-col items-center text-center relative overflow-hidden">
+<!-- Decorative background blob -->
+<div class="absolute -top-10 -right-10 w-32 h-32 bg-primary/10 rounded-full blur-2xl"></div>
+<!-- Status Icon -->
+<div class="w-20 h-20 rounded-full bg-primary/20 flex items-center justify-center mb-4 text-primary dark:text-primary">
+<span class="material-symbols-outlined text-5xl" style="font-variation-settings: 'FILL' 1, 'wght' 700;">check_circle</span>
+</div>
+<!-- Primary Result Text -->
+<h2 class="text-2xl font-bold text-primary-dark dark:text-primary mb-1">कम जोखिम</h2>
+<h3 class="text-lg font-medium text-text-muted-light dark:text-text-muted-dark mb-4">(Low Risk)</h3>
+<!-- Divider -->
+<div class="w-16 h-1 bg-primary/20 rounded-full mb-4"></div>
+<!-- Hindi Explanation -->
+<p class="text-xl font-medium text-text-main-light dark:text-text-main-dark leading-relaxed mb-2">
+                    आप और आपका बच्चा सुरक्षित हैं।
+                </p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark mb-6">
+                    (You and your baby are safe.)
+                </p>
+<!-- Audio Explanation Button -->
+<button class="flex items-center gap-2 px-4 py-2 bg-primary/10 dark:bg-primary/20 rounded-full text-primary-dark dark:text-primary hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-xl">volume_up</span>
+<span class="text-sm font-semibold">Play Audio Explanation</span>
+</button>
+</div>
+<!-- Recommendation / Next Steps -->
+<div class="mt-6">
+<div class="flex items-start gap-4 p-4 rounded-xl bg-primary-light/50 dark:bg-surface-dark border border-primary/10">
+<div class="flex-shrink-0 w-10 h-10 rounded-full bg-surface-light dark:bg-surface-dark flex items-center justify-center text-primary shadow-sm">
+<span class="material-symbols-outlined">restaurant</span>
+</div>
+<div>
+<p class="text-text-main-light dark:text-text-main-dark font-medium text-lg leading-snug">
+                            सब कुछ सामान्य लग रहा है। अच्छा खाना खाते रहें।
+                        </p>
+<p class="text-text-muted-light dark:text-text-muted-dark text-sm mt-1">
+                            Everything looks normal. Keep eating healthy food.
+                        </p>
+</div>
+</div>
+</div>
+<!-- Action Button -->
+<div class="mt-8">
+<button class="w-full bg-primary hover:bg-primary-dark text-text-main-light font-bold text-lg py-4 rounded-xl shadow-lg shadow-primary/30 active:scale-[0.98] transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">home</span>
+<span>Back to Home</span>
+</button>
+</div>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 w-full max-w-md bg-surface-light dark:bg-surface-dark border-t border-gray-100 dark:border-gray-800 pb-safe pt-2 px-6 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.05)] z-50">
+<div class="flex justify-between items-center pb-4">
+<a class="flex flex-col items-center gap-1 group" href="#">
+<div class="p-1.5 rounded-full text-primary bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">home</span>
+</div>
+<span class="text-xs font-medium text-primary">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="#">
+<div class="p-1.5 rounded-full text-text-muted-light dark:text-text-muted-dark group-hover:text-primary group-hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined text-[24px]">chat_bubble</span>
+</div>
+<span class="text-xs font-medium text-text-muted-light dark:text-text-muted-dark group-hover:text-primary">Chat</span>
+</a>
+<!-- Floating Center Action (Optional, usually scan/add) -->
+<div class="-mt-8">
+<button class="flex items-center justify-center w-14 h-14 rounded-full bg-primary text-text-main-light shadow-lg shadow-primary/40 transform transition-transform hover:scale-105 active:scale-95">
+<span class="material-symbols-outlined text-3xl">add</span>
+</button>
+</div>
+<a class="flex flex-col items-center gap-1 group" href="#">
+<div class="p-1.5 rounded-full text-text-muted-light dark:text-text-muted-dark group-hover:text-primary group-hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined text-[24px]">school</span>
+</div>
+<span class="text-xs font-medium text-text-muted-light dark:text-text-muted-dark group-hover:text-primary">Learn</span>
+</a>
+<a class="flex flex-col items-center gap-1 group" href="#">
+<div class="p-1.5 rounded-full text-text-muted-light dark:text-text-muted-dark group-hover:text-primary group-hover:bg-primary/5 transition-colors">
+<span class="material-symbols-outlined text-[24px]">person</span>
+</div>
+<span class="text-xs font-medium text-text-muted-light dark:text-text-muted-dark group-hover:text-primary">Profile</span>
+</a>
+</div>
+</nav>
+</div>
+</body></html>

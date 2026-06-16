@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vaccination Reminders - Swasth Maa AI</title>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#19e619",
+                        "primary-dark": "#14b814",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#112111",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1a2e1a",
+                    },
+                    fontFamily: {
+                        "display": ["Lexend", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col antialiased">
+<!-- Header -->
+<header class="sticky top-0 z-50 bg-surface-light/90 dark:bg-surface-dark/90 backdrop-blur-md border-b border-primary/10 px-4 py-3 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<button class="p-2 -ml-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<div>
+<h1 class="text-xl font-bold leading-tight">अगले टीके</h1>
+<p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Upcoming Vaccines</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<div class="flex flex-col items-end mr-1">
+<span class="text-sm font-semibold">अनीता</span>
+<span class="text-[10px] text-slate-500 dark:text-slate-400">Anita</span>
+</div>
+<div class="h-10 w-10 rounded-full overflow-hidden border-2 border-primary bg-slate-200">
+<img alt="Mother profile photo" class="w-full h-full object-cover" data-alt="Portrait of a smiling woman" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdJtC69RY_TrT3Qe1fufk7IwmewpEtWSUnBpIlcXhkMBygg6jZhJcJXNp0WGKUXmoIwqRyok9TzEIzOPlr44p0ZEuTImbHfdHzUtlG7wtJUflY8fL-61VazgDiysyVTRDM_9oGsFCQGedWBZSE4_yGcyu0YQk3Au3XnBJ6Z7Gb1NjrzySpeQhx2HmJGdUO7eyDn5FAOa_EUO68BjWXSLl4hon5SQgkEVmu-c5tVmHTCLzEgNSf_NZEkCud90iAnbIlEFn9ZWIpKa8"/>
+</div>
+</div>
+</header>
+<main class="flex-1 px-4 py-6 w-full max-w-md mx-auto space-y-6">
+<!-- Hero Status Card -->
+<section class="relative overflow-hidden rounded-xl bg-surface-light dark:bg-surface-dark shadow-lg shadow-primary/5 ring-1 ring-primary/20">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-9xl text-primary">vaccines</span>
+</div>
+<div class="p-5 relative z-10">
+<div class="flex justify-between items-start mb-4">
+<div class="inline-flex px-3 py-1 rounded-full bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 text-xs font-bold items-center gap-1">
+<span class="material-symbols-outlined text-sm">schedule</span>
+                        2 दिन बाकी (2 days left)
+                    </div>
+<button aria-label="Listen" class="text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">volume_up</span>
+</button>
+</div>
+<h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-1">पेंटावेलेंट-1</h2>
+<p class="text-lg text-slate-500 dark:text-slate-400 mb-6 font-medium">Pentavalent-1</p>
+<div class="flex items-center justify-between mt-4 gap-4">
+<div class="flex flex-col">
+<span class="text-xs text-slate-500 dark:text-slate-400 font-medium uppercase tracking-wider">तारीख (Date)</span>
+<span class="text-xl font-bold text-slate-800 dark:text-slate-100">15 अक्टूबर</span>
+</div>
+<button class="flex-1 bg-primary hover:bg-primary-dark text-slate-900 font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2 transition-all shadow-md shadow-primary/20 active:scale-95">
+<span class="material-symbols-outlined">notifications_active</span>
+                        रिमाइंडर (Remind)
+                    </button>
+</div>
+</div>
+<!-- Progress Bar -->
+<div class="h-1.5 w-full bg-slate-100 dark:bg-slate-800 mt-2">
+<div class="h-full bg-primary w-3/4 rounded-r-full"></div>
+</div>
+</section>
+<!-- Child Info Summary -->
+<div class="flex items-center justify-between bg-blue-50 dark:bg-blue-900/20 p-4 rounded-xl border border-blue-100 dark:border-blue-800/30">
+<div class="flex items-center gap-3">
+<div class="bg-blue-100 dark:bg-blue-800 p-2 rounded-full text-blue-600 dark:text-blue-300">
+<span class="material-symbols-outlined">child_care</span>
+</div>
+<div>
+<p class="text-sm font-bold text-slate-800 dark:text-slate-200">बच्चे की उम्र: 6 सप्ताह</p>
+<p class="text-xs text-slate-500 dark:text-slate-400">Child's age: 6 weeks</p>
+</div>
+</div>
+<button class="text-blue-600 dark:text-blue-400 text-sm font-semibold">विवरण (Details)</button>
+</div>
+<!-- Upcoming List -->
+<section>
+<div class="flex items-center justify-between mb-4">
+<h3 class="text-lg font-bold">आगामी (Upcoming)</h3>
+<button class="text-primary font-medium text-sm">सभी देखें (View All)</button>
+</div>
+<div class="space-y-4">
+<!-- Card 1 -->
+<div class="bg-surface-light dark:bg-surface-dark rounded-xl p-4 shadow-sm border border-slate-100 dark:border-slate-800 flex gap-4 items-center">
+<div class="bg-slate-100 dark:bg-slate-800 w-16 h-16 rounded-lg flex-shrink-0 flex flex-col items-center justify-center text-slate-500 dark:text-slate-400">
+<span class="text-xs font-bold uppercase">Oct</span>
+<span class="text-xl font-bold text-slate-800 dark:text-slate-200">15</span>
+</div>
+<div class="flex-1">
+<h4 class="text-lg font-bold text-slate-800 dark:text-slate-100 leading-tight">रोटावायरस-1</h4>
+<p class="text-sm text-slate-500 dark:text-slate-400">Rotavirus-1</p>
+</div>
+<button class="h-10 w-10 flex items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined">notifications_none</span>
+</button>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-light dark:bg-surface-dark rounded-xl p-4 shadow-sm border border-slate-100 dark:border-slate-800 flex gap-4 items-center opacity-80">
+<div class="bg-slate-100 dark:bg-slate-800 w-16 h-16 rounded-lg flex-shrink-0 flex flex-col items-center justify-center text-slate-500 dark:text-slate-400">
+<span class="text-xs font-bold uppercase">Nov</span>
+<span class="text-xl font-bold text-slate-800 dark:text-slate-200">12</span>
+</div>
+<div class="flex-1">
+<h4 class="text-lg font-bold text-slate-800 dark:text-slate-100 leading-tight">ओ.पी.वी-1</h4>
+<p class="text-sm text-slate-500 dark:text-slate-400">OPV-1</p>
+</div>
+<button class="h-10 w-10 flex items-center justify-center rounded-full bg-slate-100 dark:bg-slate-800 text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">notifications_none</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Completed List -->
+<section class="pt-4">
+<h3 class="text-lg font-bold mb-4 opacity-70">पूरा हुआ (Completed)</h3>
+<div class="bg-green-50/50 dark:bg-green-900/10 rounded-xl p-4 border border-green-100 dark:border-green-900/30 flex gap-4 items-center">
+<div class="bg-green-100 dark:bg-green-800 w-12 h-12 rounded-full flex-shrink-0 flex items-center justify-center text-green-600 dark:text-green-300">
+<span class="material-symbols-outlined">check</span>
+</div>
+<div class="flex-1">
+<h4 class="text-base font-bold text-slate-700 dark:text-slate-300 line-through decoration-slate-400">बी.सी.जी (BCG)</h4>
+<p class="text-xs text-slate-500 dark:text-slate-500">20 Aug • Done</p>
+</div>
+</div>
+</section>
+<!-- Help Section -->
+<div class="mt-4 bg-primary/10 dark:bg-primary/5 rounded-xl p-4 flex items-center gap-4">
+<div class="bg-surface-light dark:bg-surface-dark p-2 rounded-full text-primary shadow-sm">
+<span class="material-symbols-outlined">support_agent</span>
+</div>
+<div class="flex-1">
+<h4 class="font-bold text-slate-800 dark:text-slate-200">टीके के बारे में सवाल?</h4>
+<p class="text-xs text-slate-600 dark:text-slate-400">Ask Swasth Maa Assistant</p>
+</div>
+<button class="text-primary font-bold text-sm bg-white dark:bg-slate-800 px-3 py-1.5 rounded-lg shadow-sm">पूछें (Ask)</button>
+</div>
+<!-- Spacer for Bottom Nav -->
+<div class="h-20"></div>
+</main>
+<!-- Bottom Navigation -->
+<nav class="fixed bottom-0 left-0 w-full bg-surface-light dark:bg-surface-dark border-t border-slate-100 dark:border-slate-800 pb-safe pt-2 px-6 z-40">
+<div class="flex justify-between items-center max-w-md mx-auto h-16">
+<a class="flex flex-col items-center gap-1 w-16 text-slate-400 hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">home</span>
+<span class="text-[10px] font-medium">होम</span>
+</a>
+<a class="flex flex-col items-center gap-1 w-16 text-primary group" href="#">
+<div class="bg-primary/10 px-4 py-1 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined scale-110">vaccines</span>
+</div>
+<span class="text-[10px] font-bold">टीके</span>
+</a>
+<div class="relative -top-6">
+<button class="bg-primary hover:bg-primary-dark text-slate-900 h-14 w-14 rounded-full flex items-center justify-center shadow-lg shadow-primary/40 transition-transform hover:scale-105 border-4 border-surface-light dark:border-surface-dark">
+<span class="material-symbols-outlined text-3xl">chat_bubble</span>
+</button>
+</div>
+<a class="flex flex-col items-center gap-1 w-16 text-slate-400 hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">article</span>
+<span class="text-[10px] font-medium">लेख</span>
+</a>
+<a class="flex flex-col items-center gap-1 w-16 text-slate-400 hover:text-primary transition-colors group" href="#">
+<span class="material-symbols-outlined group-hover:scale-110 transition-transform">person</span>
+<span class="text-[10px] font-medium">प्रोफाइल</span>
+</a>
+</div>
+</nav>
+</body></html>
